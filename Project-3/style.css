@@ -12,10 +12,22 @@ body {
 }
 
 .wishes {
+    align-self: center;
     color: rgb(185, 122, 87);
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    flex-shrink: 0;
 }
 
 .content {
     color: rgb(7, 3, 1);
     font-size: 18px;
+    flex: 1;
+    padding: 100px 50px;
 }
