@@ -1,0 +1,28 @@
+* {
+    background-color: azure;
+}
+
+.mainheading {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.secondaryheading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+}
+
+.job {
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.info {
+    text-align: center;
+    font-size: 18px;
+}
