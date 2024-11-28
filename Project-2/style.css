@@ -146,6 +146,7 @@ canvas
     align-items: center;
     flex-wrap: wrap;
     width: 50%;
+    min-width: 250px;
 }
 
 .project-collection
