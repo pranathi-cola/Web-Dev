@@ -59,12 +59,18 @@ canvas
     position: relative;
 }
 
+.my-img
+{
+    min-width: 250px;
+}
+
 .my-img img,
 .some-other-img img
 {
     width: 50vh;
     height: auto;
     border-radius: 50%;
+    position: relative;
 }
 
 .greeting
