@@ -1,40 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset = "UTF-8">
-        <title>My Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
-        <h1 class="mainheading">Kola Pranathi</h1>
-        <p class="intro job">Entry-Level Programmer<p>
-        <p class="intro">kolapranathi2006@gmail.com &emsp; &emsp; 96186 75159 &emsp; &emsp; Andhra Pradesh, India &emsp; &emsp; <a href="https://github.com/pranathi-cola" target="__blank" rel="noopener noreferer">Github</a></p>
-        <p class="intro">I am an passionate learner, quick to grasp new technologies to design efficient and scalable products. I love coding and have built 10+ small projects, mainly in C. I have created my own version of shell, in C.</p>
-
-        <h2 class="secondaryheading">PROGRAMMING SKILLS</h2>
-        <ul>
-            <p class="info">C, C++, Verilog, Python, HTML5, CSS, Javascript, Git/Github</p>
-        </ul>
-
-        <h2 class="secondaryheading">PROJECTS</h2>
-        <ul>
-            <li><a href="https://github.com/pranathi-cola/C-projects/blob/main/shell.c" target="__blank" rel="noopener noreferer">Shell</a> - This is a mini version of shell which can do multiple actions like echo, move through folders, run files, check executables, enter the files and folders present in a specific folder, etc. </li>
-            <li><a href="https://pranathi-cola.github.io/Web-Dev/Project-2" target="__blank" rel="noopener noreferer">Portfolio</a> - A portfolio Website using HTML5 and CSS. It displays my skills and education.</li>
-            <li><a href="https://github.com/pranathi-cola/gate-level-verilog" target="__blank" rel="noopener noreferer">Matrix Calculator</a> Matrix Calculator using gate level verilog. It adds, subtracts, multiplies and divides the given two matrices using Gate Level Verilog</li>
-        </ul>
-
-        <h2 class="secondaryheading">EDUCATION AND CERTIFICATIONS</h2>
-        <ul>
-            <li>B.tech Computer Science and Engineering in National Institute of Technology, Calicut 2023-27</li>
-            <li>Sri Chaitanya Junior College, Eluru, Andhra Pradesh 2021-23</li>
-            <li>Dr.K.K.R's Gowtham School, Eluru, Andhra Pradesh 2019-21</li>
-        </ul>
-
-        <h2 class="secondaryheading">SPOKEN LANGUAGES</h2>
-        <p class="info">English, Hindi, Telugu(Native), Spanish(Beginner)</p>
-
-        <h2 class="secondaryheading">HOBBIES</h2>
-        <p class="info">Watching Cricket, Reading novels and comics, Drawing</p>
+        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <div id="particles-js"></div>
+        <script src="script.js"></script>
+        <div id="particles-js">
+            <div class="header">
+                <a class="inner-links" href="#basic-info">About me</a>
+                <a class="inner-links" href="#contacts">Contact</a>
+                <a class="inner-links" href="#education">Education</a>
+            </div>
+            <div class="basic-info" id="basic-info">
+                <div class="my-img">
+                    <img src="img/pranathi.jpg">
+                </div>
+                <div class="greeting"> 
+                    <h1 class="intro">
+                        Hi!!! <br>
+                        I'm Pranathi
+                    </h1>
+                    <h3 class="position">
+                        <span class="position1">Entry Level Programmer</span>
+                        <span class="position2">Web Developer</span>
+                        <span class="position3">Web Designer</span>
+                    </h3>
+                    <p class="about-me">
+                        I am an passionate learner, quick to grasp new technologies to design efficient and scalable products. 
+                        I love coding and have built 10+ small projects, mainly in C. 
+                        I have created my own version of shell, in C, a portfolio website e.t.c.
+                    </p>        
+                </div>
+            </div>
+            <div class="languages">
+                <div class="some-other-img">
+                    <img src="img/one-more.jpg">
+                </div>
+                <div class="img-lang">
+                    <h2>Languages I speak</h2>
+                    <div class="images-lang">
+                        <img class="lang-imgs" src="img/c.png">
+                        <img class="lang-imgs" src="img/c++.png">
+                        <img class="lang-imgs" src="img/verilog.png">
+                        <img class="lang-imgs" src="img/python.png">
+                        <img class="lang-imgs" src="img/html.png">
+                        <img class="lang-imgs" src="img/css.png">
+                        <img class="lang-imgs" src="img/javascript.png">
+                    </div>
+                    <h2>Hobbies</h2>
+                    <div class="hobbies">
+                        <img class="hobby-imgs" src="img/chess.png">
+                        <img class="hobby-imgs" src="img/cricket.png">
+                        <img class="hobby-imgs" src="img/football.png">
+                        <img class="hobby-imgs" src="img/drawing.png">
+                        <img class="hobby-imgs" src="img/reading.png">
+                        <img class="hobby-imgs" src="img/language.png">
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h1>My Projects</h1>
+                <div class="project-collection">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img class="img-project" src="img/terminal.png">
+                        </div>
+                        <div class="project-info">
+                            <h2>Shell with C</h2>
+                            <a href="https://github.com/pranathi-cola/C-projects/blob/main/shell.c" target="__blank" rel="noopener noreferer">Shell</a>
+                            <p>This is a miniature shell capable of performing various tasks such as echo, cd, executing files, verifying executables, pwd etc</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img class="img-project" src="img/portfolio.png">
+                        </div>
+                        <div class="project-info">
+                            <h2>Portfolio</h2>
+                            <a href="https://pranathi-cola.github.io/Web-Dev/Project-2" target="__blank" rel="noopener noreferer">Portfolio</a>
+                            <p>A portfolio website built using HTML5, CSS, and Javascript. Enhanced with interactive visuals powered by Particle.js and other modern frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img class="img-project" src="img/circuit.png">
+                        </div>
+                        <div class="project-info">
+                            <h2>Verilog</h2>
+                            <a href="https://github.com/pranathi-cola/gate-level-verilog" target="__blank" rel="noopener noreferer">Matrix Calculator</a>
+                            <p>A Gate-Level Verilog Matrix Calculator, capable of performing addition, subtraction, multiplication, and division on two input matrices.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img class="img-project" src="img/web-scraping.png">
+                        </div>
+                        <div class="project-info">
+                            <h2>Python</h2>
+                            <a href="#" target="__blank" rel="noopener noreferer">Some python</a>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education" id="education">
+                <h1>Education</h1>
+                <div class="education-card">
+                    <img src="img/nitc.png">
+                    <div class="education-info">
+                        <h2>National Institute of Technology, Calicut</h2>
+                        <h3>Btech Computer Science and Engineering</h3>
+                        <p>Location: Kozhikode, Kerala</p>
+                        <p>CGPA: 8.84</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <img src="img/chaitanya.png">
+                    <div class="education-info">
+                        <h2>Sri Chaitanya Junior College, Eluru</h2>
+                        <h3>11th & 12th Boards</h3>
+                        <p>Location: Eluru, Vijayawada, Andhra Pradesh</p>
+                        <p>Percentage: 98.1</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <img src="img/kkr.png">
+                    <div class="education-info">
+                        <h2>Dr.K.K.R's Gowtham School</h2>
+                        <h3>10th Boards</h3>
+                        <p>Location: Eluru, Vijayawada, Andhra Pradesh</p>
+                        <p>Percentage: 99.8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="links-and-info">
+                    <p>Phone: 9618675159</p>
+                    <p>Gmail: kolapranathi2006@gmail.com</p>
+                    <a href="https://github.com/pranathi-cola" target="__blank" rel="noopener noreferer">Github</a>
+                    <a href="https://www.linkedin.com/in/pranathi-k-aa3238329/" target="__blank" rel="noopener noreferer">Linkedin</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
