@@ -271,28 +271,75 @@ canvas
     animation: typewriter3;
 }
 
-.position1
+.position1,
+.position2,
+.position3
 {
     overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
 }
 
-.position1:before
+.position1::after,
+.position2::after,
+.position3::after
 {
-    content: "";
-    position: relative;
-    height: 1.2em;
-    border-left: 2px solid #4070f4;
-    animation: typewriter1 4s steps(12) infinite;
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
 }
 
 @keyframes typewriter1
 {
-    40%, 60%
+    0%, 33%, 66%, 99%
     {
-        left: 100%;
+        width: 0;
     }
+    11%, 22%
+    {
+        width: 12em;
+    }
+}
+
+@keyframes typewriter2
+{
+    0%, 33%, 66%, 99%
+    {
+        width: 0;
+    }
+    44%, 55%
+    {
+        width: 8em;
+    }
+}
+
+@keyframes typewriter3
+{
+    0%, 33%, 66%, 99%
+    {
+        width: 0;
+    }
+    77%, 88%
+    {
+        width: 7em;
+    }
+}
+
+@keyframes caret
+{
     0%, 100%
     {
-        left: 0%;
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
     }
 }
