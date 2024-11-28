@@ -4,22 +4,28 @@ const snowflakes = {
             "value": 100,
             "density": {
                 "enable": true,
-                "value_area": 700
+                "value_area": 600
             }
         },
         "color": {
-            "value": "#a4b2d3"
+            "value": ["#fc5513", "fcb732"]
         },
         "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 1,
-                "color": "#a4b2d3"
+            "type": ["edge", "triangle", "polygon"],
+            "polygon":
+            {
+                "nb_sides": 5
             }
         },
         "size": {
             "value": 16,
-            "random": true
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 10,
+                "size_min": 2,
+                "sync": false
+            }
         },
         "line_linked": {
             "enable": false
@@ -27,12 +33,11 @@ const snowflakes = {
         "move": {
             "enable": true,
             "speed": 2,
-            "direction": "bottom",
+            "direction": "none",
             "straight": false
         },
         "opacity": {
-            "value": 0.5,
-            "random": true
+            "value": 4,
         }
     },
     "interactivity": {
@@ -53,7 +58,6 @@ const snowflakes = {
 function ready() 
 {
     particlesJS("particles-js", snowflakes);
-
 }
 
 ready();
