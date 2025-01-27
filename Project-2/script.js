@@ -8,10 +8,10 @@ const snowflakes = {
             }
         },
         "color": {
-            "value": ["#fc5513", "fcb732"]
+            "value": ["#fff", "fcb732"]
         },
         "shape": {
-            "type": ["edge", "triangle", "polygon"],
+            "type": "circle",
             "polygon":
             {
                 "nb_sides": 5
